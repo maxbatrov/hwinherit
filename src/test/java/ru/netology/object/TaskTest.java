@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TaskTest {
     @Test
-    public void simpleTaskMatchesFound () {
+    public void simpleTaskMatchesFound() {
 
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
 
@@ -18,7 +18,7 @@ class TaskTest {
     }
 
     @Test
-    public void simpleTaskMatchesNotFound () {
+    public void simpleTaskMatchesNotFound() {
 
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
 
@@ -29,9 +29,9 @@ class TaskTest {
     }
 
     @Test
-    public void epicTaskMatchesFound () {
+    public void epicTaskMatchesFound() {
 
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
 
 
@@ -42,9 +42,9 @@ class TaskTest {
     }
 
     @Test
-    public void epicTaskMatchesNotFound () {
+    public void epicTaskMatchesNotFound() {
 
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
 
 
@@ -55,7 +55,7 @@ class TaskTest {
     }
 
     @Test
-    public void meetingTaskMatchesFoundTopic () {
+    public void meetingTaskMatchesFoundTopic() {
 
         Meeting meeting = new Meeting(
                 555,
@@ -72,7 +72,7 @@ class TaskTest {
     }
 
     @Test
-    public void meetingTaskMatchesFoundProject () {
+    public void meetingTaskMatchesFoundProject() {
 
         Meeting meeting = new Meeting(
                 555,
@@ -89,7 +89,7 @@ class TaskTest {
     }
 
     @Test
-    public void meetingTaskMatchesNotFound () {
+    public void meetingTaskMatchesNotFound() {
 
         Meeting meeting = new Meeting(
                 555,
